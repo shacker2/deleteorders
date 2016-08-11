@@ -442,13 +442,7 @@ class DeleteOrders extends Module
 				'submit'      => array(
 					'title' => $this->l('Save'),
 				)
-
-
 			),
-
-
-
-
 		);
 		$helper                           = new HelperForm();
 		$helper->show_toolbar             = true;
@@ -484,13 +478,7 @@ class DeleteOrders extends Module
 				'submit'      => array(
 					'title' => $this->l('Delete all'),
 				)
-
-
 			),
-
-
-
-
 		);
 		$helper                           = new HelperForm();
 		$helper->show_toolbar             = true;
@@ -562,5 +550,3 @@ class DeleteOrders extends Module
 	}
 
 }
-
-?>
