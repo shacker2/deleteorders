@@ -30,7 +30,7 @@ class DeleteOrders extends Module
 		if (_PS_VERSION_ > '1.6.0.0')
 			$this->bootstrap = true;
 
-		$this->version = '2.0';
+		$this->version = '2.0.0';
 
 		parent::__construct(); // The parent construct is required for translations
 
