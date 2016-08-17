@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<head>
+<link href="estilo.css" type="text/css" rel="stylesheet" />
+
+<script type="text/javascript" src="
+https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+<script type="text/javascript">
+hola = "hola";
+var nam;
+var persona = new Object();
+persona.nombre = "lucas";
+persona.apellido = "vitale";
+persona.edad = 30;
+
+function saludar(nombre, apellido){
+  var mensaje = "Hola " + nombre + " " + apellido;
+  alert(mensaje);
+}
+saludar(persona.nombre, persona.apellido);
+// Ejecutar la función saludar
+// (inyectamos los valores para cada parámetro)
+/**/
+
+var usuario = {
+  nombre: "Juan", 
+  edad: 31,
+  apellido: "Pérez",
+  saludar: function(){
+     alert("Hola de nuevo" + this.nombre);
+  }
+};
+
+// Ejecutar la función:
+usuario.saludar();
+var miarray = ["a","b","c"];
+console.log(miarray.length);
+miarray.push("ultimo");
+for(i=0;i<10;i++){
+	console.log(miarray[i]);
+	}
+if(hola = "hola"){
+	//alert(hola);
+	}
+
+console.log(miarray);
+miarray.pop();
+console.log(miarray);
+/*foreach*/
+function recorrido(valor,indice,array)
+{
+console.log(valor + ":"+indice);	
+}
+var miarray = ["lucas", "guille_"];
+miarray.forEach(recorrido);
+
+$(document).ready(function(e) {
+	//$('h1').animate({"opacity":"0.5","background":"#ffccdd"},5000);
+	$('h1').animate({"margin-left":"50px"},1000).fadeIn();
+	
+	 $('#ima').fadeIn(2000).attr('width','100').attr('alt','hola k hace');
+	var $cont = $('.ima').attr('alt');
+	$('.ima2').attr('alt',$cont);
+	
+	var $prog = $('progress').attr('value');
+	$('progress').attr('value',80).fadeIn();
+	
+	var $tit = $('body').css('font-size');
+	$('ul li').css({'font-size':$tit, 'color':'green'});
+	$("#main").find("img.ima2").slideUp();
+	
+	$('ul li').click(function(){
+		$(this).css('color','blue');
+		});
+		
+		$('ul li').hover(function(){
+				$(this).css('font-size','14px');
+		},function(){
+				$(this).css('font-size','11px');
+		} );
+	//alert($cont)
+    //$('h1').fadeToggle(3000);
+	//$('h1').fadeOut();
+	//$('#main').slideUp();
+});
+</script>
+<meta charset="utf-8" />
+</head>
+<body>
+<header>
+<h1 class="titulo">Hola mundo</h1>
+<nav>
+<ul id="hijos">
+<li><a href="index.html">Inicio</a></li>
+<li><a href="index.html">Contacto</a></li>
+<li><a href="index.html">Telefono</a></li>
+<li><a href="index.html">Fin</a></li>
+</ul>
+</nav>
+</header>
+<section>
+<div id="mail">
+<h2>hache dos</h2>
+<p id="parrafo">hola este es un parrafo</p>
+<h1>hache uno</h1>
+<h1>hache uno</h1>
+<h2>hache dos</h2>
+
+<ul class="lista">
+<img class="ima" src="https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_284x96dp.png" width="500" alt="test"/>
+<img class="ima" src="https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_284x96dp.png" width="500" alt="test" />
+<img class="ima2" src="https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_284x96dp.png" width="500" alt="1123123123" />
+
+</ul>
+</div>
+<div id="sec">
+<form>
+<input name="" type="text">
+<input name="" type="text">
+<input name="" type="text">
+<input name="" type="submit" id="enviar" disabled><input name="" type="reset" id="reset" enabled>
+</form>
+<p>
+El cumpleaños será el día   <time>13 de junio</time>.
+</p>
+<div id="test1">Este es un div</div>
+<div id="test2">Este es otro div</div>
+
+<progress value="10" max="100">70%</progress>.
+</div>
+
+</section>
+<footer>
+<nav>
+<ul>
+<li class="a">TEST </li>
+<li class="b"> TESTES</li>
+<li class="r">  TESTEST ES TES</li>
+</ul>
+</nav>
+<canvas id="mi_canvas" width="200" height="200"></canvas>
+<audio controls >
+<source src="https://sc.acamica.com/media/caballo.mp3">
+</audio>
+<video controls height="100">
+<source src="https://sc.acamica.com/media/chrome.mp4" type="video/mp4">
+</video>
+<p>Copyright 2014</p>
+<ul><li>test</li></ul>
+</footer>
+</body>
