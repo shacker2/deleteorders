@@ -7,7 +7,7 @@
  * No redistribute in other sites, or copy.
  *
  * @author    RSI <rsi_2004@hotmail.com>
- * @copyright 2007-2014 RSI
+ * @copyright 2007-2021 RSI
  * @license   http://catalogo-onlinersi.net
  */
 
