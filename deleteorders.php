@@ -55,12 +55,9 @@ class DeleteOrders extends Module
 		$deleteord = Tools::getValue('deleteord');
 		Configuration::updateValue('DELETEORDERS_DELETE', $deleteord);
 		$errors = '';
-		if (_PS_VERSION_ < '1.6.0.0')
-		{
+		if (_PS_VERSION_ < '1.6.0.0') {
 			$output = '<h2>'.$this->displayName.'</h2>';
-			if (Tools::isSubmit('submitall'))
-			{
-
+			if (Tools::isSubmit('submitall')) {
 			Db::getInstance()->Execute('TRUNCATE `'._DB_PREFIX_.'orders`');
 				if (_PS_VERSION_ < '1.3.0.0')
 					Db::getInstance()->Execute('TRUNCATE `'._DB_PREFIX_.'order_customization_return`');
@@ -79,8 +76,6 @@ class DeleteOrders extends Module
 				Db::getInstance()->Execute('TRUNCATE `'._DB_PREFIX_.'message`');
 				Db::getInstance()->Execute('TRUNCATE `'._DB_PREFIX_.'cart`');
 				Db::getInstance()->Execute('TRUNCATE `'._DB_PREFIX_.'cart_product`');
-				
-				
 				if (_PS_VERSION_ > '1.4.0.0')
 					Db::getInstance()->Execute('TRUNCATE `'._DB_PREFIX_.'message_readed`');
 				if (_PS_VERSION_ > '1.5.0.0')
@@ -91,9 +86,7 @@ class DeleteOrders extends Module
 				Db::getInstance()->Execute('TRUNCATE `'._DB_PREFIX_.'order_invoice_payment`');
 				}
 				$output .= $this->displayConfirmation($this->l('Orders deleted'));
-
 				return $output.$this->displayForm();
-
 			}
 			if (Tools::isSubmit('submitedeleteo'))
 			{
