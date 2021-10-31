@@ -2,7 +2,7 @@
 <module>
 	<name>deleteorders</name>
 	<displayName><![CDATA[Delete orders]]></displayName>
-	<version><![CDATA[2]]></version>
+	<version><![CDATA[2.0.0]]></version>
 	<description><![CDATA[Enable delete button in order page - www.catalogo-onlinersi.com.ar]]></description>
 	<author><![CDATA[RSI]]></author>
 	<tab><![CDATA[administration]]></tab>
